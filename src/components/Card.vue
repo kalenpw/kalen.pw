@@ -1,21 +1,19 @@
 <template>
-    <a href="/">
-        <div class="card bm--card-equal-height">
-            <div class="card-image">
-                <figure class="image is-2by1">
-                    <slot name="image"></slot>
-                </figure>
-            </div>
-            <div class="card-content">
-                <div class="content">
-                    <slot></slot>
-                </div>
-            </div>
-            <footer class="card-footer">
-                <slot name="links"></slot>
-            </footer>
+    <div class="card bm--card-equal-height">
+        <div class="card-image">
+            <figure class="image is-2by1">
+                <slot name="image"></slot>
+            </figure>
         </div>
-    </a>
+        <div class="card-content">
+            <div class="content">
+                <slot></slot>
+            </div>
+        </div>
+        <footer class="card-footer">
+            <slot name="links"></slot>
+        </footer>
+    </div>
 </template>
 <script>
 // import Navitem from "./Navitem.vue";

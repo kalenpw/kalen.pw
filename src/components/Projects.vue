@@ -21,8 +21,9 @@
                     <p>{{ switch_info }}</p>
 
                     <template v-slot:links>
-                        <a :href="switch_url" class="card-footer-item has-text-primary">SwitchArt.tk</a>
-                        <a :href="switch_github" class="card-footer-item has-text-primary">Github</a>
+                        <a :href="switch_url" class="card-footer-item has-text-primary">SwitchArt.ml</a>
+                        <a :href="switch_github_ui" class="card-footer-item has-text-primary">UI</a>
+                        <a :href="switch_github_api" class="card-footer-item has-text-primary">API</a>
                     </template>
                 </card>
             </div>
@@ -64,8 +65,9 @@ export default {
         return {
             switch_info:
                 "A place for Nintendo Switch fans to share artwork and vote on their favorite alternate art.",
-            switch_url: "http://switchart.tk",
-            switch_github: "https://github.com/kalenpw/SwitchArt",
+            switch_url: "http://switchart.ml",
+            switch_github_ui: "https://github.com/kalenpw/switchart-ui",
+            switch_github_api: "https://github.com/kalenpw/switchart-api",
 
             monopoly_info:
                 "Peer to peer Monopoly in C# for my Advanced Software Engineering Project class.",
