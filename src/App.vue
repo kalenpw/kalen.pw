@@ -1,11 +1,10 @@
 <template>
     <div id="app">
         <navbar></navbar>
-        <router-view/>
-
-        <footer>
-            <end></end>
-        </footer>
+        <div class="site">
+            <router-view/>
+        </div>
+        <end></end>
     </div>
 </template>
 
@@ -21,15 +20,13 @@ export default {
 };
 </script>
 
-<style>
-html{
-  /* min-height: 100%; */
-
+<style scoped>
+#app {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
-footer {
-    /* position: fixed; */
-    /* bottom: 0; */
-    /* width: 100%; */
-    /* overflow: hidden; */
+.site {
+    flex: 1;
 }
 </style>
