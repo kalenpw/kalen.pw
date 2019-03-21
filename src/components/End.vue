@@ -19,7 +19,7 @@
                         <i class="fab fa-twitter fa-2x"></i>
                     </span>
                 </a>
-                <a href="https://www.linkedin.com/in/kalen-williams-7a2047139/">
+                <a href="https://www.linkedin.com/in/kalenpw">
                     <span class="icon has-text-primary is-large">
                         <i class="fab fa-linkedin fa-2x"></i>
                     </span>
