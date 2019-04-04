@@ -21,7 +21,7 @@
                     <p>{{ switch_info }}</p>
 
                     <template v-slot:links>
-                        <a :href="switch_url" class="card-footer-item has-text-primary">SwitchArt.ml</a>
+                        <a :href="switch_url" class="card-footer-item has-text-primary">switchart.ml</a>
                         <a :href="switch_github_ui" class="card-footer-item has-text-primary">UI</a>
                         <a :href="switch_github_api" class="card-footer-item has-text-primary">API</a>
                     </template>
@@ -64,7 +64,7 @@ export default {
     data() {
         return {
             switch_info:
-                "A place for Nintendo Switch fans to share artwork and vote on their favorite alternate art.",
+                "A Vuejs frontend consuming REST API written in Laravel to allow Nintedo Switch fans to upload and vote on artwork.",
             switch_url: "http://switchart.ml",
             switch_github_ui: "https://github.com/kalenpw/switchart-ui",
             switch_github_api: "https://github.com/kalenpw/switchart-api",
