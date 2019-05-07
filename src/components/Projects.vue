@@ -5,17 +5,6 @@
             <div class="column is-half-tablet is-one-quarter-desktop">
                 <card>
                     <template v-slot:image>
-                        <img src="../assets/monopoly.jpg" alt>
-                    </template>
-                    <p>{{monopoly_info}}</p>
-                    <template v-slot:links>
-                        <a :href="monopoly_url" class="card-footer-item has-text-primary">Github</a>
-                    </template>
-                </card>
-            </div>
-            <div class="column is-half-tablet is-one-quarter-desktop">
-                <card>
-                    <template v-slot:image>
                         <img src="../assets/switch.jpg" alt>
                     </template>
                     <p>{{ switch_info }}</p>
@@ -43,11 +32,24 @@
             <div class="column is-half-tablet is-one-quarter-desktop">
                 <card>
                     <template v-slot:image>
-                        <img src="../assets/denny-bu-1325486-unsplash.jpg" alt>
+                        <img src="../assets/schedule.jpg" alt>
                     </template>
-                    <p>{{homelab_info}}</p>
+                    <p>{{schedukal_info}}</p>
                     <template v-slot:links>
-                        <a :href="homelab_url" class="card-footer-item has-text-primary">Github</a>
+                        <a :href="schedukal_url" class="card-footer-item has-text-primary">Demo</a>
+                        <a :href="schedukal_url_github" class="card-footer-item has-text-primary">Github</a>
+                    </template>
+                </card>
+            </div>
+
+            <div class="column is-half-tablet is-one-quarter-desktop">
+                <card>
+                    <template v-slot:image>
+                        <img src="../assets/monopoly.jpg" alt>
+                    </template>
+                    <p>{{monopoly_info}}</p>
+                    <template v-slot:links>
+                        <a :href="monopoly_url" class="card-footer-item has-text-primary">Github</a>
                     </template>
                 </card>
             </div>
@@ -65,7 +67,7 @@ export default {
         return {
             switch_info:
                 "A Vuejs frontend consuming REST API written in Laravel to allow Nintedo Switch fans to upload and vote on artwork.",
-            switch_url: "http://switchart.ml",
+            switch_url: "https://switchart.ml",
             switch_github_ui: "https://github.com/kalenpw/switchart-ui",
             switch_github_api: "https://github.com/kalenpw/switchart-api",
 
@@ -78,11 +80,11 @@ export default {
             cmus_url1: "https://github.com/kalenpw/CmusRemoteBrowser",
             cmus_url2: "https://github.com/kalenpw/CmusRemoteAndroid",
 
-            homelab_info:
-                "Homelab Server Dell PowerEdge r710 I setup and maintain. Several Nginx Vhosts, Emby Media Server, SSHFS,",
-            homelab_url: "/"
+            schedukal_info:
+                "Schedukal is a scheduling app with a front end in React and backend in Laravel.",
+            schedukal_url: "https://schedukal.ml",
+            schedukal_url_github: "https://github.com/kalenpw/Schedu-kal"
         };
-        return {};
     }
 };
 </script>
