@@ -8,7 +8,7 @@
         <br />
       </span>
       <div class="pt-2">
-        <a href="https://github.com/kalenpw" class="has-text-primary p-1">
+        <a href="https://github.com/kalenpw" class="has-text-grey-lighter p-1">
           <span class="icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -24,7 +24,7 @@
             </svg>
           </span>
         </a>
-        <a href="https://www.twitter.com/kalenpw" class="has-text-primary p-1">
+        <a href="https://www.twitter.com/kalenpw" class="has-text-grey-lighter p-1">
           <span class="icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -42,7 +42,7 @@
         </a>
         <a
           href="https://www.linkedin.com/in/kalenpw"
-          class="has-text-primary p-1"
+          class="has-text-grey-lighter p-1"
         >
           <span class="icon">
             <svg
