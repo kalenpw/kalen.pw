@@ -3,6 +3,7 @@
         <Navbar />
         <Hero />
         <div class="site">
+            <SiteContent/>
         </div>
         <Footer />
     </div>
@@ -12,6 +13,7 @@
 import Navbar from "./components/Navbar.vue";
 import Hero from "./components/Hero.vue";
 import Footer from "./components/Footer.vue";
+import SiteContent from "./components/SiteContent.vue";
 
 export default {
     name: "App",
@@ -19,6 +21,7 @@ export default {
         Navbar,
         Hero,
         Footer,
+        SiteContent,
     },
 };
 </script>
