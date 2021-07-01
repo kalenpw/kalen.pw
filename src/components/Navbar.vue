@@ -7,7 +7,7 @@
             "
         >
             <div class="container-fluid">
-                <a class="navbar-brand ms-3" href="#">Kalen Williams</a>
+                <a class="navbar-brand ms-3" href="/">Kalen Williams</a>
                 <button
                     id="navbar-dropdown-button"
                     class="navbar-toggler collapsed me-1 mb-1"
@@ -26,13 +26,13 @@
                 <div class="collapse navbar-collapse me-3" id="navbarScroll">
                     <!-- ml-auto still works just fine-->
                     <div class="navbar-nav ms-auto">
-                        <a class="ps-3 nav-link" href="https://wiki.kalen.pw">
+                        <a class="ms-3 nav-link" href="https://wiki.kalen.pw">
                             wiki
                         </a>
-                        <a class="ps-3 nav-link" href="https://blog.kalen.pw">
+                        <a class="ms-3 nav-link" href="https://blog.kalen.pw">
                             blog
                         </a>
-                        <a class="ps-3 nav-link" href="/resume.pdf">resume</a>
+                        <a class="ms-3 nav-link" href="/resume.pdf">resume</a>
                     </div>
                 </div>
             </div>

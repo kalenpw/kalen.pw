@@ -3,7 +3,7 @@ export default [
         name: 'blog.kalen.pw',
         image: 'blog.png',
         description:
-            'Personal blog built with Django, Alpine.js and Bootstrap',
+            'Personal blog built with Django, Alpine.js and Bootstrap.',
         links: [
             {
                 title: 'blog.kalen.pw',
