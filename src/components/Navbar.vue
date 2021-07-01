@@ -2,11 +2,14 @@
     <div class="container fixed-top">
         <nav
             class="navbar navbar-expand-lg navbar-dark bg-dark mt-3 mt-lg-4"
-            :class="active? 'kpw-border-radius-small' : 'kpw-border-radius-full'"
+            :class="
+                active ? 'kpw-border-radius-small' : 'kpw-border-radius-full'
+            "
         >
             <div class="container-fluid">
                 <a class="navbar-brand ms-3" href="#">Kalen Williams</a>
                 <button
+                    id="navbar-dropdown-button"
                     class="navbar-toggler collapsed me-2 mb-1"
                     type="button"
                     data-bs-toggle="collapse"
@@ -14,7 +17,7 @@
                     aria-controls="navbarsExampleDefault"
                     aria-expanded="false"
                     aria-label="Toggle navigation"
-                    @click="active = !active"
+                    @click="toggleDropdown"
                 >
                     <span class="icon-bar top-bar"></span>
                     <span class="icon-bar middle-bar"></span>
@@ -45,6 +48,13 @@ export default {
             active: false,
         };
     },
+    methods: {
+        toggleDropdown() {
+            this.active = document
+                .getElementById("navbar-dropdown-button")
+                .getAttribute("aria-expanded")  == 'true';
+        },
+    },
 };
 </script>
 
@@ -66,6 +76,6 @@ export default {
 /* opening */
 .kpw-border-radius-small {
     border-radius: 15px !important;
-    transition: border-radius .5s ease-out;
+    transition: border-radius 0.5s ease-out;
 }
 </style>
