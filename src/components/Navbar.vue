@@ -26,13 +26,13 @@
                 <div class="collapse navbar-collapse me-3" id="navbarScroll">
                     <!-- ml-auto still works just fine-->
                     <div class="navbar-nav ms-auto">
-                        <a class="ps-3 nav-link" href="https://wiki.kalen.pw"
-                            >Wiki</a
-                        >
-                        <a class="ps-3 nav-link" href="https://blog.kalen.pw"
-                            >Blog</a
-                        >
-                        <a class="ps-3 nav-link" href="/resume.pdf">Resume</a>
+                        <a class="ps-3 nav-link" href="https://wiki.kalen.pw">
+                            wiki
+                        </a>
+                        <a class="ps-3 nav-link" href="https://blog.kalen.pw">
+                            blog
+                        </a>
+                        <a class="ps-3 nav-link" href="/resume.pdf">resume</a>
                     </div>
                 </div>
             </div>
@@ -50,9 +50,10 @@ export default {
     },
     methods: {
         toggleDropdown() {
-            this.active = document
-                .getElementById("navbar-dropdown-button")
-                .getAttribute("aria-expanded")  == 'true';
+            this.active =
+                document
+                    .getElementById("navbar-dropdown-button")
+                    .getAttribute("aria-expanded") == "true";
         },
     },
 };
@@ -60,11 +61,20 @@ export default {
 
 <style scoped>
 .navbar-brand {
-    font-size: 1.7rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media only screen and (min-width: 1000px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
 }
 
 .nav-link {
     font-size: 1.25rem;
+    font-weight: 300;
 }
 
 /* closing  */

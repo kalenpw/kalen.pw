@@ -1,11 +1,8 @@
 <template>
-    <footer class="footer mt-4 py-3 bg-dark text-white-50">
+    <footer class="footer mt-4 py-3 bg-dark text-light">
         <div class="container text-center">
             <div class="m-4">
-                <a
-                    href="https://twitter.com/kalenpw"
-                    class="no-hover-style p-2 text-light font-xl"
-                >
+                <a href="https://twitter.com/kalenpw" class="p-2 text-light">
                     <span class="visually-hidden">Twitter</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -20,10 +17,7 @@
                         />
                     </svg>
                 </a>
-                <a
-                    href="https://github.com/kalenpw"
-                    class="no-hover-style p-2 text-light"
-                >
+                <a href="https://github.com/kalenpw" class="p-2 text-light">
                     <span class="visually-hidden">GitHub</span>
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -40,7 +34,7 @@
                 </a>
                 <a
                     href="https://www.linkedin.com/in/kalenpw/"
-                    class="no-hover-style p-2 text-light"
+                    class="p-2 text-light"
                 >
                     <span class="visually-hidden">Linkedin</span>
                     <svg
@@ -57,7 +51,7 @@
                     </svg>
                 </a>
             </div>
-            <p class="text-light mb-3">
+            <p class="mb-3">
                 <small>© Kalen Williams</small>
             </p>
         </div>
@@ -69,3 +63,9 @@ export default {
     name: "Footer",
 };
 </script>
+
+<style scoped>
+a:hover {
+    color: #ddd !important;
+}
+</style>

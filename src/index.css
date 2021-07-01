@@ -1,35 +1,76 @@
 .navbar-toggler {
-  border: none !important;
+    border: none !important;
 }
+
 .icon-bar {
-  width: 22px;
-  height: 2px;
-  background-color: #B6B6B6;
-  display: block;
-  transition: all 0.2s;
-  margin-top: 4px;
+    width: 22px;
+    height: 2px;
+    background-color: #B6B6B6;
+    display: block;
+    transition: all 0.2s;
+    margin-top: 4px;
 }
+
 .navbar-toggler {
-  border: none !important;
-  background: transparent !important;
+    border: none !important;
+    background: transparent !important;
 }
+
 .navbar-toggler .top-bar {
-  transform: rotate(45deg);
-  transform-origin: 10% 10%;
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
 }
+
 .navbar-toggler .middle-bar {
-  opacity: 0;
+    opacity: 0;
 }
+
 .navbar-toggler .bottom-bar {
-  transform: rotate(-45deg);
-  transform-origin: 10% 90%;
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
 }
+
 .navbar-toggler.collapsed .top-bar {
-  transform: rotate(0);
+    transform: rotate(0);
 }
+
 .navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
+    opacity: 1;
 }
+
 .navbar-toggler.collapsed .bottom-bar {
-  transform: rotate(0);
+    transform: rotate(0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+display-1,
+display-2,
+display-3,
+display-4,
+display-5,
+display-6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+    font-family: 'Monsterrat', sans-serif;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+}
+
+a {
+    color: #00d1b2;
+    font-weight: bold;
+}
+a:hover {
+    color: #00B899;
 }
