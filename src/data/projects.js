@@ -19,7 +19,7 @@ export default [
     {
         name: 'Beer Log',
         image: 'beer_log.png',
-        description: 'iOS & Android app built with Flutter.  Tracks beers when you drink them and gives you stats.',
+        description: 'iOS & Android app built with Flutter.  Tracks beers when you drink them and gives you stats. Work in progress.',
         links: [
             {
                 title: 'GitHub',

@@ -1,6 +1,6 @@
 <template>
     <div class="container px-4 pt-4">
-        <h2 class="display-6">About</h2>
+        <h2 class="display-6 mt-3">About</h2>
         <p class="lead p-0">
             I am {{ age }} years old and currently working as a fullstack developer
             for <a href="https://adamspg.com/">Adams Publishing Group</a>.
