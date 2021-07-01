@@ -1,68 +1,67 @@
 <template>
-    <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
-        <div class="navbar-brand">
-            <a class="navbar-item is-size-4" href="/">Kalen Williams</a>
-            
-            <a
-                role="button"
-                class="navbar-burger burger"
-                aria-label="menu"
-                aria-expanded="false"
-                data-target="navbarBasicExample"
-                v-bind:class="[active ? activeClass : '']"
-                @click="toggleNav()"
-            >
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-                <span aria-hidden="true"></span>
-            </a>
-        </div>
-        <div class="navbar-menu" v-bind:class="[active ? activeClass : '']">
-            <div class="navbar-start">
-                <!-- <a class="navbar-item">Documentation</a> -->
-                <!-- <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">More</a>
-
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item">About</a>
-                        <a class="navbar-item">Jobs</a>
-                        <a class="navbar-item">Contact</a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">Report an issue</a>
+    <div class="container fixed-top">
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-dark mt-4"
+            :class="active? 'kpw-border-radius-small' : 'kpw-border-radius-full'"
+        >
+            <div class="container-fluid">
+                <a class="navbar-brand ms-3" href="#">Kalen Williams</a>
+                <button
+                    class="navbar-toggler collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarScroll"
+                    aria-controls="navbarsExampleDefault"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    @click="active = !active"
+                >
+                    <span class="icon-bar top-bar"></span>
+                    <span class="icon-bar middle-bar"></span>
+                    <span class="icon-bar bottom-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse me-3" id="navbarScroll">
+                    <!-- ml-auto still works just fine-->
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="https://wiki.kalen.pw"
+                            >Wiki</a
+                        >
+                        <a class="nav-link" href="https://blog.kalen.pw"
+                            >Blog</a
+                        >
+                        <a class="nav-link" href="/resume.pdf">Resume</a>
                     </div>
-                </div>-->
+                </div>
             </div>
-
-            <div class="navbar-end">
-                <a @click="closeNav" class="navbar-item" href="/resume.pdf">Resume</a>
-            </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
 </template>
 
 <script>
-// import Navitem from "./Navitem.vue";
 export default {
     name: "Navbar",
-    props: {
-        msg: String
-    },
     data() {
         return {
             active: false,
-            activeClass: "is-active"
         };
     },
-    methods: {
-        toggleNav() {
-            this.active = !this.active;
-        },
-        closeNav() {
-            this.active = false;
-        }
-    }
 };
 </script>
 
-<style lang="scss">
+<style scoped>
+.navbar-brand {
+    font-size: 1.7rem;
+}
+
+/* closing  */
+.kpw-border-radius-full {
+    border-radius: 100px;
+    transition: border-radius 2s;
+}
+
+/* opening */
+.kpw-border-radius-small {
+    border-radius: 15px !important;
+    transition: border-radius .5s ease-out;
+}
 </style>
