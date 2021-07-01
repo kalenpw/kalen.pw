@@ -10,7 +10,7 @@
                 <a class="navbar-brand ms-3" href="#">Kalen Williams</a>
                 <button
                     id="navbar-dropdown-button"
-                    class="navbar-toggler collapsed me-2 mb-1"
+                    class="navbar-toggler collapsed me-1 mb-1"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#navbarScroll"
