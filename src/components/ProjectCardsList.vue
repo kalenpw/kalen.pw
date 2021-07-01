@@ -7,7 +7,7 @@
         >
             <div class="card h-100">
                 <img
-                    :src="'/src/assets/' + project.image"
+                    :src="'/img/' + project.image"
                     class="card-img-top"
                     :alt="project.name"
                 />
