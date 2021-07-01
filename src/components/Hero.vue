@@ -1,6 +1,6 @@
 <template>
     <div class="kpw-hero container-fluid text-light mt-0 pt-5">
-        <div class="container pt-4 pb-3 pb-lg-5">
+        <div class="container pt-4 pb-4 pb-lg-5">
             <h2 class="display-4 pt-4 pt-lg-5">Software Developer</h2>
             <p class="h5">B.S. Computer Science</p>
         </div>
