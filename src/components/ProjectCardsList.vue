@@ -1,17 +1,22 @@
 <template>
-    <div class="row">
-        <div v-for="project in projects" :key="project.name" class="col col-sm-12 col-md-6 col-lg-3 pb-3">
-            <div class="card h-100">
+    <div class="row g-md-5">
+        <div v-for="project in projects" :key="project.name" class="col col-sm-12 col-md-6 pb-3">
+            <div class="card h-100 border-1">
+                <div class="card-header bg-dark text-light">
+                    <h2 class="card-title my-1">{{project.name}}</h2>
+                </div>
                 <img
                     :src="'/img/' + project.image"
                     class="card-img-top"
                     :alt="project.name"
                 />
-                <div class="card-body">
-                    <h3 class="card-title">{{ project.name }}</h3>
-                    <p class="card-text">
-                        {{ project.description }}
+                <div class="card-body d-flex align-items-center justify-content-between flex-column">
+                    <p class="card-text lead">
+                        {{project.description}}
                     </p>
+                    <div class="text-center">
+                        <span v-for="tag in project.tags" :key="tag" class="badge rounded-pill my-1 mx-2">{{tag}}</span>
+                    </div>
                 </div>
                 <div class="card-footer bg-white d-flex">
                     <a
@@ -66,5 +71,11 @@ export default {
 }
 .card img {
     border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0px;
+}
+
+.rounded-pill {
+    background-color:  #00d1b2;
+    font-size: 1rem;
 }
 </style>
