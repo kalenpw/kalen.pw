@@ -6,7 +6,7 @@ export default [
             'Personal blog built with Django, Alpine.js and Bootstrap.',
         links: [
             {
-                title: 'blog.kalen.pw',
+                title: 'Site',
                 url: 'https://blog.kalen.pw'
             },
             {
@@ -40,6 +40,22 @@ export default [
             {
                 title: 'GitHub',
                 url: 'https://github.com/kalenpw/workout-gopher'
+            }
+        ]
+    },
+
+    {
+        name: 'Shipping Tracker',
+        image: 'shipping_tracker.png',
+        description: 'Django app that scans your email for shipping codes and saves them in one place for convenient package tracking.',
+        links: [
+            {
+                title: 'Demo',
+                url: '#'
+            },
+            {
+                title: 'GitHub',
+                url: 'https://github.com/kalenpw/ShippingTracker'
             }
         ]
     },

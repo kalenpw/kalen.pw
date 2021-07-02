@@ -1,10 +1,6 @@
 <template>
     <div class="row">
-        <div
-            v-for="project in projects"
-            :key="project.name"
-            class="col col-md-3 col-lg-3 col-xl-4 pb-3"
-        >
+        <div v-for="project in projects" :key="project.name" class="col col-sm-12 col-md-6 col-lg-3 pb-3">
             <div class="card h-100">
                 <img
                     :src="'/img/' + project.image"
@@ -18,8 +14,12 @@
                     </p>
                 </div>
                 <div class="card-footer bg-white d-flex">
-                    <a v-for="link in project.links" :key="link.title" :href="link.url">
-                        {{link.title}}
+                    <a
+                        v-for="link in project.links"
+                        :key="link.title"
+                        :href="link.url"
+                    >
+                        {{ link.title }}
                     </a>
                 </div>
             </div>
@@ -65,6 +65,6 @@ export default {
     border-right: 1px solid #ededed;
 }
 .card img {
-    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 </style>
