@@ -28,8 +28,8 @@ export default [
         tags: [
             'Flutter',
             'Firebase',
+            'Android',
             'iOS',
-            'Android'
         ],
         links: [
             {
