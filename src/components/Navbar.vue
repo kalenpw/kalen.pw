@@ -1,9 +1,12 @@
 <template>
     <div class="container fixed-top">
         <nav
-            class="navbar navbar-expand-lg navbar-dark bg-dark mt-3 mt-lg-4"
+            class="navbar navbar-expand-lg navbar-dark bg-dark"
             :class="
-                active ? 'kpw-border-radius-small' : 'kpw-border-radius-full'
+                (active
+                    ? 'kpw-border-radius-small'
+                    : 'kpw-border-radius-full') +
+                (atTop ? ' mt-3 mt-lg-4' : ' mt-1')
             "
         >
             <div class="container-fluid">
@@ -46,7 +49,13 @@ export default {
     data() {
         return {
             active: false,
+            atTop: true,
         };
+    },
+    mounted() {
+        window.addEventListener("scroll", () => {
+            this.atTop = window.scrollY <= 30;
+        });
     },
     methods: {
         toggleDropdown() {
@@ -80,12 +89,12 @@ export default {
 /* closing  */
 .kpw-border-radius-full {
     border-radius: 100px;
-    transition: border-radius 2s;
+    transition: border-radius 2s, margin-top .2s;
 }
 
 /* opening */
 .kpw-border-radius-small {
     border-radius: 15px !important;
-    transition: border-radius 0.5s ease-out;
+    transition: border-radius 0.5s ease-out, margin-top .2s;
 }
 </style>
