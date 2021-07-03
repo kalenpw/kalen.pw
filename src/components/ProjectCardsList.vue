@@ -1,6 +1,6 @@
 <template>
     <div class="row g-md-5">
-        <div v-for="project in projects" :key="project.name" class="col col-sm-12 col-md-6 pb-3">
+        <div v-for="project in projects" :key="project.name" class="col col-12 col-md-6 pb-3">
             <div class="card h-100 border-1">
                 <div class="card-header bg-dark text-light">
                     <h2 class="card-title my-1">{{project.name}}</h2>
