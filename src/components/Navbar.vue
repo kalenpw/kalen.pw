@@ -72,7 +72,6 @@ export default {
 .navbar-brand {
     font-size: 1.25rem;
     font-weight: 300;
-    font-family: "Montserrat", sans-serif;
 }
 
 @media only screen and (min-width: 1000px) {
