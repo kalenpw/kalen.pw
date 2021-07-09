@@ -42,7 +42,7 @@ export default [
     {
         name: 'Workout Gopher',
         image: 'workout-gopher.png',
-        description: 'React webapp that reads workout history from a Google Sheet and graphs it for easy gains tracking.',
+        description: 'Vue3 webapp that reads workout history from a Google Sheet and graphs it for easy gains tracking.',
         tags: [
             'Vue',
             'ApexCharts',
