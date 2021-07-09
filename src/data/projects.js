@@ -44,8 +44,8 @@ export default [
         image: 'workout-gopher.png',
         description: 'React webapp that reads workout history from a Google Sheet and graphs it for easy gains tracking.',
         tags: [
-            'React',
-            'Recharts',
+            'Vue',
+            'ApexCharts',
             'Google Sheets API',
         ],
         links: [
