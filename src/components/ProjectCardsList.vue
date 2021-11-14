@@ -48,13 +48,6 @@ export default {
 </script>
 
 <style scoped>
-/* .btn {
-    background-color: #00d1b2;
-    color: white;
-}
-.btn:hover {
-    background-color: #00b899;
-} */
 .card-footer a {
     align-items: center;
     display: flex;
@@ -78,4 +71,12 @@ export default {
     background-color:  #00d1b2;
     font-size: 1rem;
 }
+
+.card-header {
+    border-radius: 15px 15px 0 0 !important;
+}
+.card {
+    border-radius: 15px 15px 5px 5px !important;
+}
+
 </style>

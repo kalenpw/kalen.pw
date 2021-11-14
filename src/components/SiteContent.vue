@@ -1,6 +1,6 @@
 <template>
     <div class="container px-4 pt-4">
-        <h2 class="display-6 mt-3">About</h2>
+        <h2 class="display-6 mt-3 mb-4">About</h2>
         <p class="lead p-0">
             I am {{ age }} years old and currently working as a fullstack developer
             for <a href="https://adamspg.com/">Adams Publishing Group</a>.
@@ -11,9 +11,9 @@
             <a href="https://github.com/kalenpw">GitHub</a>.
         </p>
         <p class="lead">
-            If not programming, I am likely at the gym, fishing, or reading (Discworld, currently).
+            Other hobbies include working out, snowboarding, fishing, and reading (Discworld, currently).
         </p>
-        <h2 class="display-6 mt-5">Projects</h2>
+        <h2 class="display-6 mt-5 mb-4">Projects</h2>
         <project-cards-list/>
     </div>
 </template>
