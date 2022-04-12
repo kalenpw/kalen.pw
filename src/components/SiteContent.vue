@@ -1,6 +1,7 @@
 <template>
     <div class="container px-4 pt-4">
-        <h2 class="display-6 mt-3 mb-4">About</h2>
+        <p class="lead">This page intentionally left blank (just want to reserve this domain).</p>
+        <!-- <h2 class="display-6 mt-3 mb-4">About</h2>
         <p class="lead p-0">
             I am {{ age }} years old and currently working as a fullstack developer
             for <a href="https://adamspg.com/">Adams Publishing Group</a>.
@@ -12,9 +13,9 @@
         </p>
         <p class="lead">
             Other hobbies include working out, snowboarding, fishing, and reading (Discworld, currently).
-        </p>
-        <h2 class="display-6 mt-5 mb-4">Projects</h2>
-        <project-cards-list/>
+        </p> -->
+        <!-- <h2 class="display-6 mt-5 mb-4">Projects</h2> -->
+        <!-- <project-cards-list/> -->
     </div>
 </template>
 
